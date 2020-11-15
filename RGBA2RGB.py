@@ -1,7 +1,7 @@
 from PIL import Image
 import os
-src = "./resizedData"
-dst = "./resized_black/"
+src = "./data/resizedPokemon"
+dst = "./data/resizedPokemon_black/"
 
 for each in os.listdir(src):
     png = Image.open(os.path.join(src,each))

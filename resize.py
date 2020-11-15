@@ -2,8 +2,8 @@
 import os
 import cv2
 
-src = "./data" #pokeRGB_black
-dst = "./resizedData" # resized
+src = "./data/Pokemon" #pokeRGB_black
+dst = "./data/resizedPokemon" # resized
 
 os.mkdir(dst)
 
