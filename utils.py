@@ -8,6 +8,7 @@ import json
 import random
 import pprint
 import scipy.misc
+import imageio
 import numpy as np
 from time import gmtime, strftime
 from six.moves import xrange
@@ -65,7 +66,7 @@ def merge(images, size):
 
 def imsave(images, size, path):
   image = np.squeeze(merge(images, size))
-  return scipy.misc.imsave(path, image)
+  return imageio.imread(path, image)
 
 def center_crop(x, crop_h, crop_w,
                 resize_h=64, resize_w=64):
